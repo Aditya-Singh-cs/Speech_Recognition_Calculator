@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Speech Recognition Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Instruction Box -->
+    <div class="instruction-box">
+        <p>Use speech recognition for calculations. Press the mic button and say an expression like "2+5 equals".</p>
+    </div>
+
+    <div class="container">
+        <div class="speech-recognition">
+            <label class="switch">
+                <input type="checkbox" id="checkbox" onclick="toggle()">
+                <span class="slider round"></span>
+            </label>
+            <i class="fas fa-microphone"></i>
+        </div>
+        <div class="display">
+            <span>
+                <p id="statement" class="display-s"></p>
+            </span>
+            <span>
+                <p id="result" class="display-r">0</p>
+            </span>
+        </div>
+        <div id="btns" class="btns"></div>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
